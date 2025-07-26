@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #fde2ff, #dff7ff);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8); /* light translucent background */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  color: #ff6ec7;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(255, 105, 180, 0.2);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #f9f9f9;
+  width: 65%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+  background-color: #ff77aa;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff77aa;
+}
+
+.weather-info img {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+  animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+footer a {
+  color: #6a6aff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.forecast-day {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  width: 70px;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.forecast-day:hover {
+  transform: scale(1.1);
+}
+
+.forecast-day img {
+  width: 40px;
+  height: auto;
+  margin: 5px 0;
+  animation: bounce 2.5s infinite ease-in-out;
+}
+
+.forecast-date {
+  font-weight: bold;
+  color: #ff77aa;
+}
+
+.forecast-temp {
+  color: #333;
+  font-weight: 500;
+}
+body {
+  position: relative;
+  overflow: hidden; /* Prevent scrollbars caused by animation */
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("images/breeze.png");
+  background-repeat: repeat;
+  background-size: 200px auto;
+  opacity: 0.06;
+  z-index: 0;
+  animation: floatStars 120s linear infinite;
+}
+
+@keyframes floatStars {
+  0% { background-position: 0 0; }
+  100% { background-position: -1000px 1000px; }
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Weather App</title>
+
+  <!-- Google Fonts and Styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background-animation"></div>
+  <div class="container">
+    <h1>Weather App</h1>
+    <form id="search-form">
+      <input type="text" id="city-input" placeholder="Enter a city" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="weather-info">
+      <h2 id="city-name"></h2>
+      <div id="temperature"></div>
+      <div id="description"></div>
+      <div id="wind"></div>
+      <img id="icon" src="images/weatherchange.png" alt="Weather Icon" title="Waiting for your city..." />
+    </div>
+
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <footer>
+    <p>Hosted on <a href="#" id="netlify-link">Netlify</a> | Code on <a href="#" id="github-link">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
